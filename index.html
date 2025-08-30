@@ -3,18 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SIGMA KFT Mérnökiroda | Építészeti, statikai, geotechnikai és energetikai tervezés</title>
-  <meta name="description" content="SIGMA KFT Mérnökiroda – építészeti, statikai, geotechnikai, energetikai és tűzvédelmi tervezés Harta és környékén. Teljes körű mérnöki szolgáltatás egy kézben." />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1K5HW521RY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1K5HW521RY');
-  </script>
-
+  <title>SIGMA KFT MÉRNÖKIRODA – Teljes körű mérnöki tervezés</title>
+  <meta name="description" content="SIGMA KFT MÉRNÖKIRODA – építészeti és mérnöki tervezés: építészet, statika, geotechnika, energetika, tűzvédelem, tartószerkezeti szakértés." />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -29,12 +19,15 @@
     h1{font-weight:700; font-size:clamp(28px,4vw,44px); color:#fff}
     h2{font-weight:700; font-size:clamp(22px,3vw,32px); color:#0d1b2a}
     .container{width:min(1100px,92%); margin:auto}
+    /* Hero */
     .hero{
       background:var(--navy); color:#fff; padding:64px 0;
       background-image: radial-gradient(80% 120% at 120% -20%, rgba(255,255,255,.08), transparent);
-      position: relative;
+      position: relative; /* FONTOS */
     }
     .hero p{margin:.5rem 0 0; opacity:.95; font-size:clamp(16px,2.2vw,20px)}
+
+    /* Jobbra pozícionált kontakt */
     .hero-contact {
       position: absolute;
       top: 20px;
@@ -45,6 +38,8 @@
     }
     .hero-contact p {margin: 0;}
     .hero-contact strong {color: #fff;}
+
+    /* Section blocks */
     section{padding:48px 0}
     .grid{
       display:grid; gap:24px;
@@ -55,22 +50,27 @@
       padding:18px; display:flex; gap:12px; align-items:flex-start;
     }
     .service .ico{width:28px;height:28px; color:var(--accent); flex:0 0 28px}
+
+    /* <<< ÚJ STÍLUS >>> */
     .service strong {
-      font-size: 1.2rem;
-      display: block;
-      margin-bottom: 4px;
-      color: var(--accent);
+      font-size: 1.2rem;   /* nagyobb betű */
+      display: block;      /* külön sor */
+      margin-bottom: 4px;  /* kis térköz alatta */
+      color: var(--accent); /* zöld szín */
     }
+
     .reasons{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
     .reason{display:flex; gap:10px; align-items:flex-start}
     .tick{color:var(--accent); font-size:22px; line-height:1}
     .muted{color:#6b7280}
     .band{background:var(--light)}
+    /* Contact */
     .contact{
       background:#fff; border:1px solid #e9ecef; border-radius:12px; padding:24px;
     }
     .contact p{margin:6px 0}
     footer{padding:24px 0; color:#6b7280; font-size:14px}
+    /* Responsive */
     @media (max-width:900px){
       .grid{grid-template-columns:repeat(2,1fr)}
       .service{grid-column:span 1}
@@ -86,36 +86,83 @@
   <header class="hero">
     <div class="container">
       <h1>SIGMA KFT MÉRNÖKIRODA</h1>
-      <p>Teljes körű építészeti, statikai, geotechnikai, energetikai és tűzvédelmi tervezés – egy kézben</p>
+      <p>Teljes körű mérnöki szolgáltatás – egy kézben</p>
+
+      <!-- Jobbra igazított elérhetőség -->
       <div class="hero-contact">
         <p><strong>📞 06 20 9 11 61 65</strong></p>
         <p><strong>📧 helfrichsalamon@gmail.com</strong></p>
       </div>
+
     </div>
   </header>
 
   <!-- SZOLGÁLTATÁSOK -->
   <section class="container">
     <h2>Szolgáltatásaink</h2>
-    <p>Cégünk építészeti tervezéstől a statikai méretezésen és geotechnikai vizsgálatokon át az energetikai számításokig és tűzvédelmi dokumentációkig teljes körű mérnöki szolgáltatást kínál. Mérnökirodánk Hartán és az egész országban vállal projekteket.</p>
-    <!-- Szolgáltatások blokkjai itt maradnak -->
+    <div class="grid" style="margin-top:18px">
+      <!-- 1 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-3V12H8v10H5a2 2 0 0 1-2-2z" stroke-width="1.7"/></svg>
+        <div><strong>Építészeti tervezés</strong><br><span class="muted">Engedélyezési és kiviteli tervek</span></div>
+      </div>
+      <!-- 2 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16M4 10h16M4 16h16M4 22h16" stroke-width="1.7"/></svg>
+        <div><strong>Statikai tervezés</strong><br><span class="muted">Tartószerkezeti méretezés, modellezés</span></div>
+      </div>
+      <!-- 3 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 20c3-6 6-9 9-9s6 3 9 9" stroke-width="1.7"/><circle cx="12" cy="11" r="1.2" fill="currentColor"/></svg>
+        <div><strong>Geotechnikai vizsgálatok</strong><br><span class="muted">Talajvizsgálati jelentés</span></div>
+      </div>
+      <!-- 4 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v6m0 8v6m8-8h-6m-8 0H2" stroke-width="1.7"/></svg>
+        <div><strong>Energetikai számítások</strong><br><span class="muted">Tanúsítványok és megfelelőségek adásvételi szerződéshez, pályázathoz</span></div>
+      </div>
+      <!-- 5 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5z" stroke-width="1.7"/></svg>
+        <div><strong>Tűzvédelmi dokumentáció</strong><br><span class="muted">Tűzvédelmi koncepció és terv</span></div>
+      </div>
+      <!-- 6 -->
+      <div class="service">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20V8l8-4 8 4v12M9 20v-6h6v6" stroke-width="1.7"/></svg>
+        <div><strong>Tartószerkezeti szakértés</strong><br><span class="muted">Állapotfelmérés, szakvélemény</span></div>
+      </div>
+    </div>
   </section>
 
-  <!-- KAPCSOLAT -->
+  <!-- MIÉRT MI -->
+  <section class="band">
+    <div class="container">
+      <h2>Miért minket válasszon?</h2>
+      <div class="reasons" style="margin-top:12px">
+        <div class="reason"><div class="tick">✓</div><div>Több szakterület – egy mérnökiroda</div></div>
+        <div class="reason"><div class="tick">✓</div><div>Precíz, határidőre elkészített tervek</div></div>
+        <div class="reason"><div class="tick">✓</div><div>Szakmai tapasztalat és naprakész tudás</div></div>
+        <div class="reason"><div class="tick">✓</div><div>Ügyfélközpontú megközelítés</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KAPCSOLAT (sima szöveg) -->
   <section class="container">
     <h2>Lépjen kapcsolatba velünk!</h2>
     <div class="contact" aria-labelledby="kapcsolat">
-      <p><strong>Cím:</strong> 6326 Harta, Dózsa Gy. u. 75. – Mérnökiroda</p>
+      <p><strong>Cím:</strong> 6326 Harta Dózsa Gy. u.75.</p>
       <p><strong>Telefon:</strong> 06 20 9 11 61 65</p>
       <p><strong>E-mail:</strong> helfrichsalamon@gmail.com</p>
     </div>
   </section>
 
   <footer class="band">
-    <div class="container">© <span id="year"></span> SIGMA KFT MÉRNÖKIRODA – Építészeti és mérnöki tervezés Harta, Bács-Kiskun megye</div>
+    <div class="container">© <span id="year"></span> SIGMA KFT MÉRNÖKIRODA – Minden jog fenntartva.</div>
   </footer>
 
   <script>
+    // Automatikus évszám a láblécben
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
